@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>⏰ Alarm Timer</h1>
+
+    <div class="inputs">
+        <input id="hours" type="number" min="0" max="99" placeholder="HH">
+        <span>:</span>
+
+        <input id="minutes" type="number" min="0" max="59" placeholder="MM">
+        <span>:</span>
+
+        <input id="seconds" type="number" min="0" max="59" placeholder="SS">
+    </div>
+
+    <div id="display">00:00:00</div>
+
+    <div class="buttons">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resumeBtn">Resume</button>
+        <button id="resetBtn">Reset</button>
+        <button id="stopAlarmBtn">Stop Alarm</button>
+    </div>
+
+</div>
+
+<audio id="alarmAudio" loop>
+    <source src="alarm.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
